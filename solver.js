@@ -3,6 +3,8 @@ if (!process.argv[2]) {
 }
 const { numberOfItems, size, items } = parseInputData(process.argv[2]);
 
+console.log({ numberOfItems, size });
+
 function parseInputData(inputString) {
   const lines = inputString.split("\n").filter(str => str !== "");
   const [numberOfItems, size] = lines[0]
