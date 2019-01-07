@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 if (!process.argv[2]) {
   throw new Error("Expected input data");
 }
@@ -5,9 +7,9 @@ const data = parseInputData(process.argv[2]);
 
 const algos = [valueDensityGreedy];
 algos.forEach(algo => {
-  const { solution, value } = algo(data);
+  const { value, solution } = algo(data);
   const string = stringifyAnswer(value, solution);
-  console.log(string);
+  fs.writeFileSync("./answer", string);
 });
 
 function valueDensityGreedy(data) {
@@ -34,7 +36,7 @@ function valueDensityGreedy(data) {
       return item;
     })
     .sort((a, b) => a.originalIndex - b.originalIndex);
-  return { solution, value, remainingCapacity };
+  return { solution, value };
 }
 
 function parseInputData(inputString) {

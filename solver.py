@@ -8,7 +8,9 @@ Item = namedtuple("Item", ['index', 'value', 'weight'])
 def solve_it(input_data):
     res = call(["node","./solver.js",input_data])
 
-    output_data = "From Python output: fix me"
+    with open('./answer', 'r') as answer:
+        output_data = answer.read()
+        
     return output_data
 
 if __name__ == '__main__':
