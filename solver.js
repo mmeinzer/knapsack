@@ -13,7 +13,7 @@ algos.forEach(algo => {
 });
 
 function valueDensityGreedy(data) {
-  const { numberOfItems, capacity, items } = data;
+  const { capacity, items } = data;
   const sortedItems = items
     .map((item, i) => {
       item.valueDensity = item.value / item.weight;
