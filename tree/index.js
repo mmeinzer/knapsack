@@ -1,6 +1,9 @@
-function newTree(rootNode) {
+function newTree(dataArr = []) {
+  const rootNode = newNode(dataArr[0]);
+  const nodeCount = 1;
   return {
-    rootNode
+    rootNode,
+    nodeCount
   };
 }
 

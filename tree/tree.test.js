@@ -1,4 +1,4 @@
-const { newTree, newNode } = require("./tree");
+const { newTree, newNode } = require("./index");
 
 test("newTree is a function that returns an object", () => {
   expect(typeof newTree()).toBe("object");
