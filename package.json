@@ -1,0 +1,23 @@
+{
+  "name": "knapsack",
+  "version": "1.0.0",
+  "description": "Solution to the knapsack problem",
+  "main": "solver.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmeinzer/knapsack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmeinzer/knapsack/issues"
+  },
+  "homepage": "https://github.com/mmeinzer/knapsack#readme"
+}
