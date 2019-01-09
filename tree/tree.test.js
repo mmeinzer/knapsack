@@ -18,10 +18,3 @@ test("newNode.isLeaf correctly identifies a non-leaf node", () => {
   const res = node.isLeaf();
   expect(res).toBe(false);
 });
-
-test("setRightNode correctly adds a child node to the right", () => {
-  const node = newNode("parent");
-  const child = newNode("child");
-  node.setRightNode(child);
-  expect(node.rightNode.data).toBe("child");
-});
